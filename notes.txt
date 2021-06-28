@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>javascript</title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+			
+			
+			function fun1(argument) {
+				console.log(argument);
+			}
+
+			fun1("hello user!");
+
+		</script>
+	</body>
+</html>	
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>javascript</title>
+	</head>
+	<body>
+		<button onclick="fun1('hi')"> hi</button>
+		<button onclick="fun1('hello')"> hello</button>
+		<button onclick="fun1('tata')"> tata</button>
+		<button onclick="fun1('bye bye')"> bye bye</button>
+
+		<script type="text/javascript">
+			
+			
+			function fun1(argument) {
+				console.log(argument);
+			}
+
+		
+		</script>
+	</body>
+</html>	
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>javascript</title>
+		<style type="text/css">
+			#div1{
+				height: 100px;
+				width: 100px;
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<button onclick="fun1('red')"> red</button>
+		<button onclick="fun1('green')"> green</button>
+		<button onclick="fun1('yellow')"> yellow</button>
+		<button onclick="fun1('orange')"> orange</button>
+
+		<div id="div1"></div>
+
+		<script type="text/javascript">
+			
+			d = document.getElementById('div1'); //element fetch using id 
+			
+			function fun1(argument) {
+				d.style.backgroundColor = argument;
+				console.log(argument);	
+			}
+		</script>
+	</body>
+</html>	
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>javascript</title>
+	</head>
+	<body>
+		<button onclick="fun3('bold')"> Bold</button>
+		<button onclick="fun4('italic')"> Italic</button>
+		<button onclick="fun1('underline')"> UnderLine</button>
+		<button onclick="fun2('50px')"> Increase Font</button>
+
+		<p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<script type="text/javascript">
+			
+			d = document.getElementById('para1'); //element fetch using id 
+			
+			function fun1(argument) {
+				d.style.textDecoration = argument;
+				console.log(argument);	
+			}
+			function fun2(argument){
+				d.style.fontSize=argument;			
+			}
+
+			function fun3(argument){
+				d.style.fontWeight=argument;			
+			}
+			function fun4(argument){
+				d.style.fontStyle=argument;			
+			}
+		</script>
+	</body>
+</html>	
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>javascript</title>
+		<style type="text/css">
+			#div1{
+				height: 100px;
+				width:  100px;
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<button onclick="ltor()">Left to Right</button>
+		<button onclick="rtol()">Right to Left</button>
+
+		<div id="div1"></div>
+			<script type="text/javascript">
+			
+			d = document.getElementById('div1'); //element fetch using id 
+			i=0
+			function ltor() {
+				d.style.marginLeft = i+"px";
+				i=i+10	
+			}
+
+			function rtol() {
+				if(i>0){
+					console.log(i)
+					i=i-10
+				  d.style.marginLeft = i+"px";
+				  	
+				}		
+			}
+		</script>
+	</body>
+</html>	
